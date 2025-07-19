@@ -37,4 +37,4 @@ with DatabaseConnection() as conn:
     
     print("Query results:")
     for row in results:
-        print(row)
+        print(row) 
