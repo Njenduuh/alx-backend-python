@@ -7,7 +7,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',  # ✅ Added
-    'chats',           # ✅ Added
+    
 ]
 # Django REST Framework global settings
 REST_FRAMEWORK = {
