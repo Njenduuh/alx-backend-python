@@ -18,3 +18,4 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ],
 }
+AUTH_USER_MODEL = 'chats.User'
