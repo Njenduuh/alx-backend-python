@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import User, Message, Conversation
-from rest_framework.exceptions import ValidationError
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -39,5 +38,5 @@ class ConversationSerializer(serializers.ModelSerializer):
 
     def validate(self, data):
         if 'participants' in data and len(data['participants']) < 2:
-            raise ValidationError("A conversation must have at least two participants.")
+            raise serializers.ValidationError("A conversation must have at least two participants.")
         return data
