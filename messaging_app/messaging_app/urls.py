@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('chats.urls')),  # <== ✅ include chat routes under /api/
+    path('api/', include('chats.urls')),  # include chats app API
 ]
